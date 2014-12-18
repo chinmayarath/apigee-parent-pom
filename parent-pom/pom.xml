@@ -25,6 +25,32 @@
 	<build>
 		<plugins>
 			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<id>copy-resources-step</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<!-- this is important -->
+							<overwrite>true</overwrite>
+							<!-- target -->
+							<outputDirectory>${basedir}/target/apiproxy</outputDirectory>
+							<resources>
+								<resource>
+									<!-- source -->
+									<directory>apiproxy</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
 				<groupId>io.apigee.build-tools.enterprise4g</groupId>
 				<artifactId>apigee-edge-maven-plugin</artifactId>
 				<version>1.0.0</version>
@@ -70,19 +96,19 @@
 		 <profile>
 			<id>test</id>
 			<properties>
-				<apigee.profile>dev</apigee.profile>
+				<apigee.profile>test</apigee.profile>
 				<apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
 				<apigee.apiversion>v1</apigee.apiversion> <!-- value of version in  https://api.enterprise.apigee.com/v2 -->
 				<apigee.org>chinmayarath</apigee.org>
 				<apigee.env>test</apigee.env>
 				<apigee.username>${username}</apigee.username>
-				<apigee.password>${password}</apigee.password>
+				<apigee.password>${password}</apigee.password>	
 			</properties>
 		</profile>
 		<profile>
 			<id>prod</id>
 			<properties>
-				<apigee.profile>dev-sandbox</apigee.profile>
+				<apigee.profile>prod</apigee.profile>
 				<apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
 				<apigee.apiversion>v1</apigee.apiversion> <!-- value of version in  https://api.enterprise.apigee.com/v2 -->
 				<apigee.org>chinmayarath</apigee.org>
