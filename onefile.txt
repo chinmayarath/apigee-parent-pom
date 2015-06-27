@@ -5,3 +5,4 @@ I just inserted a file to my local and locale-remote repo.
  change 
  change 
  change in dev 
+ change in master 
