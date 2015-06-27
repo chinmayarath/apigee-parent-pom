@@ -1,5 +1,7 @@
 #!/bin/sh
 
+git checkout dev
+
 echo " change in dev " >> onefile.txt
 
 git add .
