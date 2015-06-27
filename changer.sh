@@ -1,7 +1,7 @@
 #!/bin/sh
 
-cat " change " >> ./onefile.txt
+echo " change " >> onefile.txt
 
 git add .
-git commit -m "Added som change"
+git commit -m "Added some change"
 git push
