@@ -20,7 +20,7 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<modules>
-		<module>../sample-app</module>
+		<module>../dummy</module>
 	</modules>
 	<build>
 		<plugins>
