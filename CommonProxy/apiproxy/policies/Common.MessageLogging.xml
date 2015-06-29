@@ -1,0 +1,13 @@
+<MessageLogging name="Common.MessageLogging">
+  <File>
+    <Message>{logData}
+</Message>
+    <FileName>../../../../../apix/apix.log</FileName>
+    <FileRotationOptions rotateFileOnStartup="true">
+      <FileRotationType>TIME_SIZE</FileRotationType>
+      <MaxFileSizeInMB>10</MaxFileSizeInMB>
+      <MaxFilesToRetain>10</MaxFilesToRetain>
+      <RotationFrequency unit="minute">60</RotationFrequency>
+    </FileRotationOptions>
+  </File>
+</MessageLogging>

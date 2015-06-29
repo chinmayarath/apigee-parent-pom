@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules>
+    		#CommonFaultHandlingM2M#
+    </FaultRules>
+    <Flows>
+    <Flow name="TokenValidationLBAS">
+            <Request>
+                #TokenValidationLBAS#
+            </Request>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/TokenValidationLBAS&quot;)</Condition>
+        </Flow>
+        <Flow name="TokenValidationM2M">
+            <Request>
+                #TokenValidationM2M#
+            </Request>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/TokenValidationM2M&quot;)</Condition>
+        </Flow>  
+        <Flow name="SpikeArrest">
+            <Request>
+            	<Step><Name>ValidateAccessToken</Name></Step>
+                #SpikeArrestAndQuotaPolicy#
+            </Request>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/SpikeArrest&quot;)</Condition>
+        </Flow>  
+        <Flow name="CommomResponsePolicy">
+            <Request>
+                #CommonResponsePolicyM2M#
+            </Request>
+            <Condition>(proxy.pathsuffix MatchesPath &quot;/CommomResponsePolicy&quot;)</Condition>
+        </Flow>  
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/m2m/v1/commonproxy</BasePath>
+        <VirtualHost>default</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>

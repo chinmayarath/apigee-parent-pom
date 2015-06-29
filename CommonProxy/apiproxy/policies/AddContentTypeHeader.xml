@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AddContentTypeHeader">
+    <DisplayName>AddContentTypeHeader</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <Set>
+        <Headers>
+          <Header name="Content-Type">application/xml</Header>
+          <Header name="Access-Control-Allow-Origin">*</Header>
+      </Headers>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

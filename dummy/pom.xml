@@ -13,5 +13,18 @@
 	<version>1.0.0</version>
 	<name>dummy</name>
 	<packaging>pom</packaging>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>io.apigee.build-tools.enterprise4g</groupId>
+				<artifactId>proxy-dependency-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>io.apigee.build-tools.enterprise4g</groupId>
+				<artifactId>apigee-edge-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+
+	</build>
 
 </project>

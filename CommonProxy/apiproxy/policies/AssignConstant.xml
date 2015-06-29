@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AssignConstant">
+    <DisplayName>AssignConstant</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <AssignVariable>
+        <Name>proxyPath</Name>
+        <Value/>
+      <Ref>proxy.pathsuffix</Ref>
+    </AssignVariable>
+  	<AssignVariable>
+        <Name>requestVerb</Name>
+        <Value/>
+      <Ref>request.verb</Ref>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="dmmy">
+    <ConfigurationVersion minorVersion="0" majorVersion="4"/>
+    <CreatedAt>1389596467149</CreatedAt>
+    <CreatedBy>crath@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>dummy</DisplayName>
+    <LastModifiedAt>1389596467149</LastModifiedAt>
+    <LastModifiedBy>msingh@apigee.com</LastModifiedBy>
+    <Policies>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+    <groupId>apigee</groupId>
+    <artifactId>parent-pom</artifactId>
+    <version>1.0</version>
+    <relativePath>../parent-pom/pom.xml</relativePath>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>m2m-commonproxy</artifactId>
+  <name>m2m-commonproxy</name>
+  <version>0.3.1</version>
+  <packaging>pom</packaging>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>io.apigee.build-tools.enterprise4g</groupId>
+        <artifactId>proxy-dependency-maven-plugin</artifactId>
+        <version>2.1.0</version>
+                <executions>
+                    <execution>
+                        <id>resolve-flowfrag-step</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>resolve</goal>
+                        </goals>
+                        <configuration>
+                            <proxyRefs combine.self="override">
+                                <proxyRef>CommonProxy</proxyRef>
+                            </proxyRefs>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+    </plugins>
+  </build>
+</project>
+

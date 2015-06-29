@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<StatisticsCollector async="false" continueOnError="false" enabled="true" name="StatisticCollectorCompanyName">
+    <DisplayName>StatisticCollectorCompanyName</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <Statistics>
+        <Statistic name="M2MCompany" ref="MyCompany" type="STRING">NA</Statistic>
+        <Statistic name="MajorCode" ref="majorCode" type="STRING">NA</Statistic>
+      	<Statistic name="MinorCode" ref="minorCode" type="STRING">NA</Statistic>
+    </Statistics>
+</StatisticsCollector>

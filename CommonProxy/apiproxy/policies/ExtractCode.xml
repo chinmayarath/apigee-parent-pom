@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="ExtractCode">
+    <DisplayName>ExtractCode</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+	<XMLPayload stopPayloadProcessing="false">
+      <Variable name="majorCode" type="string">
+         <XPath>//majorReturnCode</XPath>
+      </Variable>
+      <Variable name="minorCode" type="string">
+         <XPath>//minorReturnCode</XPath>
+      </Variable>
+   </XMLPayload>
+    <Source clearPayload="false">message.content</Source>
+</ExtractVariables>

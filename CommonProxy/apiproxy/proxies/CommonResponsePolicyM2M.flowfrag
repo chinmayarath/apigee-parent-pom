@@ -1,0 +1,19 @@
+<!-- #CommonResponsePolicyM2M# : Use STANDRADIZED TOKEN VALUE in all proxy and target end points. -->
+<Step>
+	<Name>AddContentTypeHeader</Name>
+</Step>
+<Step>
+	<Name>JsAcceptHeader</Name>
+</Step>
+<Step>
+	<Condition>(accept = "json")</Condition>
+	<Name>XmlToJsonTransformation</Name>
+</Step>
+<Step>
+	<Condition>(accept = "json")</Condition>
+	<Name>ExtractJsonMessageBody</Name>
+</Step>
+<Step>
+	<Condition>(accept = "xml")</Condition>
+	<Name>CommonXsltTransform</Name>
+</Step>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" mapIdentifier="config" enabled="true" name="KVMRetrieveLoggingFlag">
+    <DisplayName>KVMRetrieveLoggingFlag</DisplayName>
+    <Get assignTo="configValues">
+        <Key>
+            <Parameter>[TO_BE_REPLACED]</Parameter>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

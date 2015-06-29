@@ -1,0 +1,15 @@
+<AssignMessage name="AssignFaultName">
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignVariable>
+        <Name>faultName</Name>
+        <Ref>fault.name</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>exceptionName</Name>
+        <Ref>exceptionName</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>statusCode</Name>
+        <Ref>statusCode</Ref>
+    </AssignVariable>
+</AssignMessage>

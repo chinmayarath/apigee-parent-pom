@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XSL async="false" continueOnError="false" enabled="true" name="CommonXsltTransform">
+    <DisplayName>CommonXsltTransform</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <Source>response</Source>
+    <ResourceURL>xsl://CommonXsltTransform.xsl</ResourceURL>
+    <Parameters ignoreUnresolvedVariables="true"/>
+  <OutputVariable>resp</OutputVariable>
+</XSL>
