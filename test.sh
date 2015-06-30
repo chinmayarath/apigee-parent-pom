@@ -1,4 +1,8 @@
 
 
-formParams="apidir="${1}"&branch="${2}"&profile="${3}
-echo "'"$formParams"'"
+var=asdfds,sdf,sdfsd
+arr=$(echo $var | tr "," " ")
+for x in $arr
+do 
+	echo $x
+done
