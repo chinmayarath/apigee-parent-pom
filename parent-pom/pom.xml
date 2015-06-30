@@ -21,6 +21,7 @@
 	</pluginRepositories>
 	<modules>
 		<module>../dummy</module>
+		<module>../dummy2</module>
 	</modules>
 	<build>
 		<pluginManagement>
