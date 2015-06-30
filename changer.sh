@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git checkout dev
+git checkout master
 
 echo " change in dev " >> onefile.txt
 
