@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="1" name="common_proxy">
-    <ConfigurationVersion minorVersion="0" majorVersion="4"/>
-    <CreatedBy>aanand@apigee.com</CreatedBy>
-    <Description>Default Proxy For Handling Invalid Resource Path Calls</Description>
-    <DisplayName>DefaultProxy</DisplayName>
-</APIProxy>
