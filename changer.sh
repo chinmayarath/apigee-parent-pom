@@ -2,7 +2,7 @@
 
 git checkout master
 
-echo " change in dev " >> onefile.txt
+echo " change in master " >> onefile.txt 
 
 git add .
 
