@@ -1,0 +1,28 @@
+<!-- #TokenValidationLBAS# : Use STANDRADIZED TOKEN VALUE in all proxy and target end points. -->
+             <Step>
+                <Condition>(client.scheme = &quot;http&quot;) and (request.header.X-Forwarded-Proto = &quot;http&quot;)</Condition>
+                <FaultRules/>
+                <Name>FaultWrongProtocol</Name>
+           </Step>
+           <Step>
+           	<Name>JsSizeCheck</Name>
+           </Step>
+            <Step>
+                <Name>ExtractAuthorizationHeader</Name>
+            </Step>
+            <Step>
+              <Condition>(oauthtoken = null) or (oauthtoken = '') or (oauthtoken= "")</Condition>
+                <Name>MissingAuthorizationHeader</Name>
+            </Step>
+            <Step>
+                <Name>AssignConstant</Name>
+            </Step>
+            <Step>
+                <Name>ValidateAccessToken</Name>
+            </Step>
+            <Step>
+                <Name>AssignAuthenticationHeader</Name>
+            </Step>
+            <Step>
+                <Name>CheckApiGroup</Name>
+            </Step>

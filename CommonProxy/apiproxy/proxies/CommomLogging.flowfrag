@@ -1,0 +1,9 @@
+<!-- #CommomLogging# : Use STANDRADIZED TOKEN VALUE in all proxy and target end points. -->
+<Step>
+	<Condition>"isLogginEnabled" == "true"</Condition> 
+	<Name>Jsc.GenerateLogPayload</Name>
+</Step>
+<Step>
+	<Condition>"isLogginEnabled" == "true"</Condition>
+	<Name>Common.MessageLogging</Name>
+</Step>

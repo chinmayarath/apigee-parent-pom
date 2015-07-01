@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="EntityAppToXmlRequest">
+    <DisplayName>EntityAppToXmlRequest</DisplayName>
+    <FaultRules/>
+    <Properties/>
+   	<Set> 
+      <Payload type="text/xml">{AccessEntity.EntityDeveloper}</Payload> 
+    </Set> 
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables> 
+ <AssignTo createNew="true" transport="http" type="request">accessentity.typed</AssignTo>
+</AssignMessage>

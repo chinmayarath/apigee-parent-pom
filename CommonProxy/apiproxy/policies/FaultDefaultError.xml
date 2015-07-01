@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="FaultDefaultError">
+    <DisplayName>FaultDefaultError</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <FaultResponse>
+         <Set>
+    <Payload contentType="application/json" variablePrefix="$" variableSuffix="#">{
+"id": "SVC0001",
+"description": "Service Error - Internal Server Error "
+}</Payload>
+  </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

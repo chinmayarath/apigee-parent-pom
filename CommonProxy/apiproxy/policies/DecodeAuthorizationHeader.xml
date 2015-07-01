@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<BasicAuthentication async="false" continueOnError="false" enabled="true" name="DecodeAuthorizationHeader">
+    <DisplayName>DecodeAuthorizationHeader</DisplayName>
+    <Operation>Decode</Operation>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <User ref="userId" />
+    <Password ref="password" />
+    <Source>accesstoken.Auth_Header</Source>
+</BasicAuthentication>

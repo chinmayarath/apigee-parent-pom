@@ -1,0 +1,10 @@
+<!-- #StatisticCollectorM2M# : Use STANDRADIZED TOKEN VALUE in all proxy and target end points. -->
+<Step>
+     <Name>EntityDeveloper</Name>
+</Step>
+<Step>
+     <Name>EntityAppToXmlRequest</Name>
+</Step>
+<Step>
+  	<Name>ExtractCompanyName</Name>
+</Step>

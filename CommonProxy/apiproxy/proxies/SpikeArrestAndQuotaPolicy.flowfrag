@@ -1,0 +1,7 @@
+<!-- #SpikeArrestAndQuotaPolicy# : Use STANDRADIZED TOKEN VALUE in all proxy and target end points. -->
+            <Step>
+                <Name>SpikeArrest</Name>
+            </Step>
+            <Step>
+                <Name>CheckAppQuota</Name>
+            </Step>

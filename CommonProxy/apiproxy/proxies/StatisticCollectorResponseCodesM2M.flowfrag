@@ -1,0 +1,12 @@
+<!-- #StatisticCollectorResponseCodesM2M# : Use STANDRADIZED TOKEN VALUE in all proxy and target end points. -->
+<Step>
+	<Condition>(accept = "json")</Condition>
+    <Name>JsExtractCodes</Name>
+</Step>
+<Step>
+     <Condition>(accept = "xml")</Condition>
+     <Name>ExtractCode</Name>
+</Step>
+<Step>
+   	 <Name>StatisticCollectorCompanyName</Name>
+</Step>

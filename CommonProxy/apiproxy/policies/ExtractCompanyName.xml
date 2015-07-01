@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="ExtractCompanyName">
+    <DisplayName>ExtractCompanyName</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <Source clearPayload="false">AccessEntity.EntityDeveloper</Source>
+  	<XMLPayload>
+    <Variable name="MyCompany" type="string">
+            <XPath>/Developer/Attributes/Attribute[Name='vf_m2m_company_name']/Value</XPath>
+        </Variable>
+  </XMLPayload>
+</ExtractVariables>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault name="FaultErrorResponseTemplateJSON">
+	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+	<FaultResponse>
+	   <Set>
+		 <Payload contentType="application/json" variablePrefix="$" variableSuffix="#">{
+&quot;id&quot; : &quot;$errorId#&quot; ,
+&quot;description&quot; : &quot;$errorDetail#&quot;
+}</Payload>
+		<StatusCode>{errorCode}</StatusCode>
+         <ReasonPhrase>{errorMessage}</ReasonPhrase>
+	   </Set>
+	</FaultResponse>
+</RaiseFault>

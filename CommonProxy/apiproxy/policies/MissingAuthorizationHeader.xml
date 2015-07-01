@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="MissingAuthorizationHeader">
+    <DisplayName>MissingAuthorizationHeader</DisplayName>
+    <FaultRules/>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+          <Headers>
+            <Header name="WWW-Authenticate"/>
+			</Headers>
+		 <Payload contentType="application/json" variablePrefix="$" variableSuffix="#">{
+	"id": "SVC0002",
+	"description": "Invalid input value - Authorization"
+}</Payload>
+		<StatusCode>401</StatusCode>
+          <ReasonPhrase>UnAuthorized</ReasonPhrase>
+	   </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

@@ -1,0 +1,266 @@
+{
+    "configurations": [
+        {
+            "name": "dev",
+            "policies": [
+            {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				
+            
+            ],
+            "proxies": [],
+            "targets": [
+            ]
+        },
+        {
+            "name": "m2m-test1",
+            "policies": [
+            {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				
+            
+            ],
+            "proxies": [],
+            "targets": [
+            ]
+        },
+        {
+            "name": "m2m-test2",
+            "policies": [
+            {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				
+            
+            ],
+            "proxies": [],
+            "targets": [
+            ]
+        },
+        {
+            "name": "m2m-test3",
+            "policies": [
+            {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				
+            
+            ],
+            "proxies": [],
+            "targets": [
+            ]
+        },
+        {
+            "name": "dev-sandbox",
+            "policies": [ {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				],
+            "proxies": [],
+            "targets": [
+               
+            ]
+        },
+        {
+            "name": "stage",
+            "policies": [ {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				],
+            "proxies": [],
+            "targets": [
+               
+            ]
+        },
+        {
+            "name": "stage-prod",
+            "policies": [ {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				],
+            "proxies": [],
+            "targets": [
+               
+            ]
+        },
+        {
+            "name": "stage-sandbox",
+            "policies": [ {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				],
+            "proxies": [],
+            "targets": [
+               
+            ]
+        },
+         {
+            "name": "m2m",
+            "policies": [ {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				],
+            "proxies": [],
+            "targets": [
+             
+            ]
+        },
+         {
+            "name": "m2m-sandbox",
+            "policies": [ {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				],
+            "proxies": [],
+            "targets": [
+             
+            ]
+        },
+         {
+            "name": "stage-aws",
+            "policies": [ {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				],
+            "proxies": [],
+            "targets": [
+             
+            ]
+        },
+        {
+            "name": "stage-aws-sandbox",
+            "policies": [ {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				],
+            "proxies": [],
+            "targets": [
+             
+            ]
+        },
+        {
+            "name": "prod",
+            "policies": [ {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				],
+            "proxies": [],
+            "targets": [
+             
+            ]
+        },
+        {
+            "name": "prod-preprod",
+            "policies": [ {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				],
+            "proxies": [],
+            "targets": [
+             
+            ]
+        },
+        {
+            "name": "prod-sandbox",
+            "policies": [ {
+                    	"name": "SpikeArrest.xml",
+                    	"tokens": [
+                        {
+                            "xpath": "/SpikeArrest/Rate",
+                            "value": "5ps"
+                        }
+                    	]
+                	}
+            				],
+            "proxies": [],
+            "targets": [
+            ]
+        }
+    ]
+}

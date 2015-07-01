@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="ExtractJsonMessageBody">
+    <DisplayName>ExtractJsonMessageBody</DisplayName>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="message.content">
+            <JSONPath>$.Envelope.Body</JSONPath>
+        </Variable>
+    </JSONPayload>
+</ExtractVariables>

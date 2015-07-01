@@ -1,0 +1,42 @@
+<!-- #CommonFaultHandlingM2M# : Use STANDRADIZED TOKEN VALUE in all proxy and target end points. -->
+<FaultRule name="FaultHandler">
+            <Condition>(fault.name = "RaiseFault")</Condition>
+			<Step>
+				<Condition>"isLogginEnabled" == "true"</Condition> 
+				<Name>Jsc.GenerateLogPayload</Name>
+			</Step>
+			<Step>
+				<Condition>"isLogginEnabled" == "true"</Condition>
+				<Name>Common.MessageLogging</Name>
+			</Step>
+            <Step>
+                <Name>StatisticCollectorCompanyName</Name>
+            </Step>
+        </FaultRule>
+ <FaultRule name="FaultHandling">
+            <Condition>(fault.name != "RaiseFault")</Condition>
+			<Step>
+				<Condition>"isLogginEnabled" == "true"</Condition> 
+				<Name>Jsc.GenerateLogPayload</Name>
+			</Step>
+			<Step>
+				<Condition>"isLogginEnabled" == "true"</Condition>
+				<Name>Common.MessageLogging</Name>
+			</Step>
+			<Step>
+            <Name>AssignFaultName</Name>
+            </Step>
+            <Step>
+                <Name>StatisticCollectorCompanyName</Name>
+            </Step>
+            <Step>
+                <Name>JsHandleFaults</Name>
+            </Step>
+            <Step>
+                <Condition>(errorResponseType == "xml")</Condition>
+                <Name>FaultErrorResponseTemplateXML</Name>
+            </Step>
+            <Step>
+                <Name>FaultErrorResponseTemplateJSON</Name>
+            </Step>
+            </FaultRule>

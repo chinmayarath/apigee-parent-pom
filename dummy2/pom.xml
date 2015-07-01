@@ -9,9 +9,9 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>test.chinmaya</groupId>
-	<artifactId>dummy</artifactId>
+	<artifactId>dummy2</artifactId>
 	<version>1.0.0</version>
-	<name>dummy</name>
+	<name>dummy2</name>
 	<packaging>pom</packaging>
 	<build>
 		<plugins>
@@ -24,6 +24,7 @@
 				<artifactId>apigee-edge-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+
 	</build>
 
 </project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault name="FaultErrorResponseTemplateXML">
+	<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+	<FaultResponse>
+	   <Set>
+		 <Payload contentType="application/xml">
+		  <error>
+           <id>{errorId}</id>
+			<description>{errorDetail}</description>
+			</error></Payload>
+		<StatusCode>{errorCode}</StatusCode>
+		<ReasonPhrase>{errorMessage}</ReasonPhrase>
+	   </Set>
+	</FaultResponse>
+</RaiseFault>
