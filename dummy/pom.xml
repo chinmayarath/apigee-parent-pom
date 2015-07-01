@@ -24,7 +24,6 @@
 				<artifactId>apigee-edge-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-
 	</build>
 
 </project>
