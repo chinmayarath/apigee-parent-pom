@@ -4,7 +4,18 @@
          "name":"test",
 
          "policies":[],
-         "proxies":[],
+         "proxies":[
+         	{
+                    "name": "default.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/ProxyEndpoint/HTTPProxyConnection",
+                            "value": "<BasePath>/</BasePath><VirtualHost>default</VirtualHost>"
+                        }
+                    ]
+                }
+
+         	],
          "targets":[]
 		},
 		{
